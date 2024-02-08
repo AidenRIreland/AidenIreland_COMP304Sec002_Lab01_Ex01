@@ -29,7 +29,7 @@
         android:layout_height="52dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Type Product Name"
+        android:hint="Type Product Name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -43,7 +43,7 @@
         android:layout_height="47dp"
         android:ems="10"
         android:inputType="numberDecimal"
-        android:text="Type:price per unit, > 0"
+        android:hint="Type:price per unit, > 0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,15 +52,17 @@
 
     <EditText
         android:id="@+id/QuantityNumber"
-        android:layout_width="275dp"
-        android:layout_height="55dp"
+        android:layout_width="261dp"
+        android:layout_height="58dp"
         android:ems="10"
+        android:hint="Type quantity, min-1, max-10"
         android:inputType="number"
-        android:text="Type quantity, min-1, max-10"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
 
     <Button
         android:id="@+id/Calculate"
@@ -72,21 +74,22 @@
         app:layout_constraintHorizontal_bias="0.785"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.613" />
+        app:layout_constraintVertical_bias="0.613"
+
+        />
 
     <TextView
         android:id="@+id/Display"
-        android:layout_width="249dp"
-        android:layout_height="114dp"
-        android:padding="46dp"
-        android:text="TextView"
+        android:layout_width="258dp"
+        android:layout_height="121dp"
+        android:background="@color/white"
+        android:hint="Display"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.58"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.794"
-        android:background="@color/white"/>
+        app:layout_constraintVertical_bias="0.794" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
